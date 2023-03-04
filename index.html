@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Blogging</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+    
+    <div class="nav">
+        <div class="heading">
+            Blogging Website
+        </div>
+        <div class="post-btn-div">
+            <button id="post-btn">Create New Post</button>
+        </div>
+    </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="create-post">
+                        <span class="create-post-span">Create A Post</span>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="head-input-div">
+                        <input type="text" class="heading-input" placeholder="Enter Your heading....">
+                    </div>
+                    <div class="textarea-div">
+                        <textarea id="blog-content" cols="60" rows="10" placeholder="Enter Your Blog Post...."></textarea>
+                    </div>
+                    <div class="publish-div">
+                        <button id="publish-btn">Publish Post</button>
+                        <button id="cancel-post">Cancel Post</button>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-modal" id="editing-modal">
+                <span class="close-edit" id="close-btn-edit">&times;</span>
+                <div class="title"></div><br>
+                
+                <button class="save-btn">Save</button>
+                <br>
+
+            </div>
+            <div class="blogsDiv"></div>
+        </div>
+
+        
+    
+    
+</body>
+<script src="./index.js"></script>
+</html>
